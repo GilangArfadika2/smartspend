@@ -41,7 +41,7 @@ body {
     -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
     font-smooth: always; /* Non-standard property for some browsers */
     overflow-x: hidden;
-    border: 1px dashed #007bff;
+    /* border: 1px dashed #007bff; */
 }
 
 .max-width-clamp {
