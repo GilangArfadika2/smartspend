@@ -9,6 +9,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
     <!-- <link rel="preload" href="logo-no-background1.svg" as="image">
     <link rel="preload" href="logo-no-background2.svg" as="image"> -->
@@ -66,7 +67,7 @@
                     </p>
                     
                   </div>
-                  <img  src="images/SmartSpend.svg" style="width: 40%; object-fit: contain;"/>
+                  <img class="hero-image" src="images/SmartSpend.svg" style="width: 40%; object-fit: contain;"/>
                 </div>
 
             </div>
@@ -76,7 +77,7 @@
             <div class="content-structure">
                 <div class="content-theme">
                 <div class="max-w-xl">
-                    <h1 class="text-6xl font-bold text-black">Why SmartSpend?</h1>
+                    <h1 class="text-5xl font-bold text-black">Why SmartSpend?</h1>
                     <p class="py-6 text-black">
                         SmartSpend goes beyond tracking your finances. We provide the tools to understand them. With personalized budgets, detailed reports, and expert tips, SmartSpend helps you make smarter choices to improve your financial health, step by step.
                     </p>
@@ -219,9 +220,9 @@
                 
                 <div class="feature-card  reverse-translate" style="background-color: #394523; color: white;">
                     <div class="feature-card-text">
-                        <h3>Reward Points</h3>
-                        <p style="color: white;">Earn reward points after completing actions within the app. These points can be used for transactions with partner brands, helping to keep users engaged and motivated in their financial journey.</p>  </div>
-                    <div class="feature-card-image  reverse-translate">
+                        <h3  style="font-size: 24px;">Reward Points</h3>
+                        <p style="color: white;font-size: 16px; line-height: 1.5;">Earn reward points after completing actions within the app. These points can be used for transactions with partner brands, helping to keep users engaged and motivated in their financial journey.</p>  </div>
+                    <div class="feature-card-image">
                         <img src="images/rewardpoint.png" alt="Limit Saver" />
                     </div>
                 </div>
@@ -230,7 +231,7 @@
             </div>
         </div>
 
-<div class="content-background" id="testimonials-section"  style="background:linear-gradient(90deg,  rgba(255, 236, 214, 0.8) 0%, rgba(67, 45, 236, 0.6) 100%); clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);">
+<div class="content-background" id="testimonials-section" >
     <div class="content-structure">
         <div class="content-theme">
         <div class="max-w-xl">
@@ -339,47 +340,48 @@
                 </div>
             </div>
 
-        </div>
+        </div>        
     </div>
 </div>
 
-<div class="content-background"  >
+<div class="content-background"  id="marquee" style="align-items: center;" >
     <div class="content-structure" style="min-height: fit-content;">
         <div class="content-theme">
         <div class="max-w-xl">
-            <h1 class="text-6xl font-bold text-black">All-in-One Financial Connectivity</h1>
-            <p class="py-6 text-black">
+            <h1 class="text-5xl font-bold text-black">All-in-One Financial Connectivity</h1>
+            <p class="py-6 px-8 text-black">
                 SmartSpend seamlessly connects with thousands of digital banking apps, e-wallets, and investment platforms, giving you a unified view of your finances in one place. Say goodbye to juggling accounts and hello to smarter financial management.
             </p>
             
         </div>
         </div>
+        <div class="slider px-6" style="
+        --width: 100px;
+        --height: 80px;
+        --quantity: 8;
+    ">
+    <div class="list">
+        <div class="item" style="--position: 1"><img style="object-fit: contain;" src="images/bca.svg" alt=""></div>
+        <div class="item" style="--position: 2"><img style="object-fit: contain;" src="images/bni.svg" alt=""></div>
+        <div class="item" style="--position: 3"><img style="object-fit: contain;" src="images/mandiri.svg" alt=""></div>
+        <div class="item" style="--position: 4"><img style="object-fit: contain;" src="images/bri.svg" alt=""></div>
+        <div class="item" style="--position: 5"><img style="object-fit: contain;" src="images/bibit.svg" alt=""></div>
+        <div class="item" style="--position: 6"><img style="object-fit: contain;" src="images/stockbit.svg" alt=""></div>
+        <div class="item" style="--position: 7"><img style="object-fit: contain;" src="images/ajaib.svg" alt=""></div>
+        <div class="item" style="--position: 8"><img style="object-fit: contain;" src="images/raksa.svg" alt=""></div>
+        <!-- <div class="item" style="--position: 8"><img src="images/slider1_9.png" alt=""></div>
+        <div class="item" style="--position: 9"><img src="images/slider1_10.png" alt=""></div> -->
+    </div>
+    </div>
        
     </div>
-        <div class="slider" style="
-            --width: 100px;
-            --height: 80px;
-            --quantity: 8;
-        ">
-        <div class="list">
-            <div class="item" style="--position: 1"><img style="object-fit: contain;" src="images/bca.svg" alt=""></div>
-            <div class="item" style="--position: 2"><img style="object-fit: contain;" src="images/bni.svg" alt=""></div>
-            <div class="item" style="--position: 3"><img style="object-fit: contain;" src="images/mandiri.svg" alt=""></div>
-            <div class="item" style="--position: 4"><img style="object-fit: contain;" src="images/bri.svg" alt=""></div>
-            <div class="item" style="--position: 5"><img style="object-fit: contain;" src="images/bibit.svg" alt=""></div>
-            <div class="item" style="--position: 6"><img style="object-fit: contain;" src="images/stockbit.svg" alt=""></div>
-            <div class="item" style="--position: 7"><img style="object-fit: contain;" src="images/ajaib.svg" alt=""></div>
-            <div class="item" style="--position: 8"><img style="object-fit: contain;" src="images/raksa.svg" alt=""></div>
-            <!-- <div class="item" style="--position: 8"><img src="images/slider1_9.png" alt=""></div>
-            <div class="item" style="--position: 9"><img src="images/slider1_10.png" alt=""></div> -->
-        </div>
-        </div>
+      
     </div>
 
     <div class="content-background" id="fourth-content-background">
         <div class="content-structure" >
     <section class="value-proposition fade-in-translate">
-        <div class="value-prop-container">
+        <div class="value-prop-container"id="cta-prop">
           <div class="value-proposition-text">
             <h2>Achieve Your Financial Freedom with SmartSpend!</h2>
             <p class="mb-6">Download SmartSpend today to connect your digital banking apps and gain a clear, real-time view of your financial health. Take control and start your journey toward smarter spending!</p>
@@ -395,7 +397,7 @@
              </div>
           </div>
           <div class="value-proposition-image">
-            <img class="w-full rounded-lg object-cover"  style="min-height: 200px;" src="images/firstpage.png" alt="office content 1">
+            <img class="w-full rounded-lg object-cover"  style="min-height: 200px; min-width: 100%;" src="images/firstpage.png" alt="office content 1">
           </div>
         </div>
     </section>
@@ -411,7 +413,7 @@
             <nav>
               <h6 class="footer-title">Services</h6>
               <a class="link link-hover">Branding</a>
-              <a class="link link-hover">Design</a>
+              <a class="link link-hover" href="https://www.figma.com/proto/DN9TEFrHqOeygxxgpfCk2q/WIREFRAME?node-id=344-6383&t=yBDEUcigHArxDxMY-0&scaling=scale-down&content-scaling=fixed&page-id=36%3A271&starting-point-node-id=344%3A6383&show-proto-sidebar=1">Figma</a>
               <a class="link link-hover">Marketing</a>
               <a class="link link-hover">Advertisement</a>
             </nav>
