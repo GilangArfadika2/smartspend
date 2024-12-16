@@ -4,18 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Define color variables */
 :root {
-    --color-dominant: #FDFBF7; /* Background color */
-    --color-secondary: #FFFFFF; /* White for text on the dominant background */
-    --color-accent: #FFC857; /* Soft yellow accent for highlights and buttons */
-    --color-primary: #5E17EB; /* A complementary purple tone for primary elements */
-    --color-neutral: #E5E5E5; /* Light gray for secondary background elements */
-    --color-base-100: #FFFFFF; /* Pure white for cards or elevated content */
-    --color-info: #57C7F5; /* Sky blue for informational highlights */
-    --color-success: #36D399; /* Green for success indicators */
-    --color-warning: #FBBD23; /* Amber for warnings */
-    --color-error: #F87272; /* Soft red for errors */
-    --color-black: #150f0f;
-    --color-white: #FFFFFF;
+    --color-dominant: #FFECD6; /* Light Cream for Background */
+    --color-primary: #0F2167; /* Dark Blue for Text and Borders */
+    --color-accent: #432DEC; /* Vibrant Purple for Buttons and Highlights */
+    --color-white: #FFFFFF; /* Pure White */
+    --color-neutral: #F8F8F8; /* Light Neutral for Secondary */
+    --color-base-100: #FFFFFF; /* White for elevated cards or content */
+    --color-info: #57C7F5; /* Sky blue remains */
+    --color-success: #36D399; /* Success green remains */
+    --color-warning: #FBBD23; /* Warning amber remains */
+    --color-error: #F87272; /* Error red remains */
+    --color-black: #0F2167; /* Adjust black to primary dark blue */
+    --color-white: #FFFFFF; /* Standard white */
     --f-dm-serif : "Poppins";
     --f-inter : "Inter";
 }
@@ -27,14 +27,16 @@
     
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     
     width: 100%;
     height: fit-content;
     font-family: var(--f-dm-serif), sans-serif;
-    color: var(--color-dominant);
-    background-color: var(--color-neutral);
+    color: var(--color-primary);
+    background-color: var(--color-dominant);
     /* padding-bottom: 50px; */
     /* position: relative; */
     -webkit-font-smoothing: antialiased; /* For WebKit browsers like Safari */
@@ -88,17 +90,22 @@ body {
     gap: 80px;
 } */
 .navbar {
-    position: sticky; /* Enables sticky positioning */
-    top: 0; /* Specifies the point where the element becomes sticky */
-    z-index: 1000; /* Ensures it stays above other elements */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: var(--color-dominant);
-  
-  border-bottom: 0.6px solid #ddd5d5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
+    border-radius: 16px; /* Slightly rounded corners */
+    margin: 10px; /* Add margin to see the blur effect better */
 }
+
 
 .nav-list {
   display: flex;
@@ -119,7 +126,7 @@ body {
 }
 
 .nav-list li a:hover {
-  color: rgb(213, 192, 153);
+  color: var(--color-accent);
 }
 
 .nav-list li a::after {
@@ -129,7 +136,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: wheat;
+    background-color: var(--color-accent);
     transition: width 0.3s ease-in-out;
   }
   
@@ -161,7 +168,7 @@ body {
 
 /* Hover effect for tag */
 .right-tag:hover {
-  background-color: #007bff;
+  background-color: var(--color-accent);
   color: white;
 }
 /* 
@@ -250,7 +257,7 @@ nav {
     font-family: var(--f-dm-serif), serif;
     font-size: 4rem;
     font-weight: 700;
-    color: var(--color-black);
+    color: var(--color-primary);
     z-index: 100;
     animation: fadeIn 1s forwards; /* Start the animation on load */
 }
@@ -274,7 +281,7 @@ nav {
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 1.5rem;
-    color: var(--color-black);
+    color: var(--color-primary);
     z-index: 100;
     text-align: center;
     animation-delay: 1.2s;
@@ -306,21 +313,18 @@ nav {
 
 #first-content-background {
     background-color: var(--color-dominant);
+    clip-path: inset(0 0 0 0 round 60px);
 }
 
 
 #fourth-content-background {
     height: 100%;
     /* border: 1px dashed darkblue; */
-    background: linear-gradient(
-        to top,
-        #FF79B0, /* Soft Pink */
-        #FF9A77, /* Light Coral */
-        #FFB383, /* Peach */
-        #FFD577, /* Soft Yellow */
-        #FFE7C6, /* Light Cream */
-        #FDFBF7  /* Very Light Beige */
-    );
+    clip-path: ellipse(75% 100% at 50% 100%);
+    background: linear-gradient(135deg, 
+    rgba(67, 45, 236, 0.6) 0%,   /* Purple with transparency */
+    rgba(255, 236, 214, 0.8) 50%, /* Cream with slight opacity */
+    rgba(15, 33, 103, 0.6) 100% );  /* Deep blue with transparency */
 }
 /* #second-content-background {
     background-color: #3A5BA0 ;
@@ -497,45 +501,6 @@ animation: reverseX 1s forwards;
    border-bottom-right-radius: 8%;
 }
 
-.cta-section {
-    background-color: #FFDA77; /* Soft yellow background */
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 16px;
-    margin: 40px auto;
-    max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.cta-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #111827; /* Dark text */
-    margin-bottom: 16px;
-}
-
-.cta-description {
-    font-size: 1.2rem;
-    color: #4B5563; /* Medium gray text */
-    margin-bottom: 24px;
-    line-height: 1.6;
-}
-
-.cta-button {
-    background-color: #556B2F; /* Soft green */
-    color: #FFFFFF;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #435629; /* Slightly darker green */
-}
 /* Features Container */
 .features-container {
     display: flex;
@@ -823,5 +788,6 @@ animation: reverseX 1s forwards;
         width: 100%; /* Stack cards on mobile */
     }
 }
+
 
 
