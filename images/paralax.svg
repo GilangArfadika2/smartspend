@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" style="width:100%; height:auto;">
+  <!-- Background Sky -->
+  <rect width="1200" height="800" fill="#F5F5F5" />
+
+  <!-- Clouds -->
+  <g id="clouds">
+    <ellipse cx="200" cy="150" rx="150" ry="80" fill="#EAEAEA" />
+    <ellipse cx="300" cy="200" rx="120" ry="60" fill="#EAEAEA" />
+    <ellipse cx="800" cy="100" rx="200" ry="100" fill="#EAEAEA" />
+    <ellipse cx="950" cy="200" rx="150" ry="80" fill="#EAEAEA" />
+  </g>
+
+  <!-- Sun -->
+  <g id="sun">
+    <circle cx="600" cy="400" r="80" fill="#F45B69" />
+    <circle cx="600" cy="400" r="100" fill="rgba(244,91,105,0.4)" />
+  </g>
+
+  <!-- Mountains -->
+  <g id="mountains">
+    <polygon points="100,500 400,200 700,500" fill="#4E636C" />
+    <polygon points="600,500 850,250 1100,500" fill="#394D52" />
+  </g>
+
+  <!-- Lake -->
+  <g id="lake">
+    <rect y="500" width="1200" height="300" fill="#F45B69" />
+    <polygon points="0,500 1200,500 0,520" fill="rgba(244,91,105,0.5)" />
+  </g>
+
+  <!-- Trees (Foreground) -->
+  <g id="foreground-trees">
+    <!-- Left Tree -->
+    <polygon points="80,600 140,450 200,600" fill="#283A3E" />
+    <polygon points="90,550 140,400 190,550" fill="#1C292C" />
+    <!-- Right Tree -->
+    <polygon points="1000,600 1060,450 1120,600" fill="#283A3E" />
+    <polygon points="1010,550 1060,400 1110,550" fill="#1C292C" />
+  </g>
+
+  <!-- Grass -->
+  <g id="grass">
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#283A3E" stroke-width="4" />
+    <line x1="50" y1="600" x2="60" y2="570" stroke="#283A3E" stroke-width="2" />
+    <line x1="90" y1="600" x2="100" y2="580" stroke="#283A3E" stroke-width="2" />
+    <line x1="1150" y1="600" x2="1160" y2="570" stroke="#283A3E" stroke-width="2" />
+  </g>
+</svg>
