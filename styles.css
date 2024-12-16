@@ -60,6 +60,10 @@ body {
     min-height: 96dvh;
     align-items: center;
 }
+.hero-content {
+    display: flex;
+    /* flex-direction: colum; */
+}
 
 .value-proposition-text {
     color: var(--color-dominant);
