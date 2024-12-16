@@ -95,19 +95,22 @@ body {
 } */
 .navbar {
     position: sticky;
+    min-width: 100%;
     top: 0;
     z-index: 1000;
     display: flex;
+    /* border: 2px dashed #F87272; */
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    /* justify-content: center; */
+    padding: 0px 60px;
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
     border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
     backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
     -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
     border-radius: 16px; /* Slightly rounded corners */
-    margin: 10px; /* Add margin to see the blur effect better */
+    /* margin: 10px; Add margin to see the blur effect better */
 }
 
 
