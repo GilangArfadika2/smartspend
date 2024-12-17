@@ -321,7 +321,7 @@ nav {
     align-items: center;
     flex-direction: column;
     /* max-width: none; */
-    min-width: 100%;
+    min-width:100dvw;
     padding: 60px 0;
     background-attachment: fixed;
     background-position: center center;
